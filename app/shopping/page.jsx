@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Link from "next/link";
 
 const Shopping = () => {
 
   return (
     <div>
-      <h1>Shopping</h1>
+      <h1>Shopping Home</h1>
     </div>
   )
 
