@@ -6,12 +6,15 @@ const ShoppingLayout = ({children}) => {
     <>
         <h3>NavBar of shopping</h3>
         <ul>
-            <li>
+          <li>
+            <Link href="/shopping">Home</Link>
+          </li>
+          <li>
             <Link href="/shopping/categories">Categories</Link>
-            </li>
-            <li>
+          </li>
+          <li>
             <Link href="/shopping/sellings">Sellings</Link>
-            </li>
+          </li>
         </ul>
         {children}
     </>
