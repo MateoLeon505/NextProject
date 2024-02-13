@@ -1,8 +1,15 @@
+"use client"
+import { useEffect } from "react"
+import Users from "../components/users"
+
 const HomePage = () => {
     return (
-        <div>
+        <section>
             <h1>Hola</h1>
-        </div>
+            {window.localStorage.getItem('token')}
+            <button onClick={()=>{alert("Holaaa!")}}>Click</button>
+            <Users/>
+        </section>
     )
 }
 
