@@ -7,9 +7,10 @@ export const metadata = {
   keywords : 'Tienda, E-commerce, Producto, Online'
 }
 
-Roboto({
+const roboto = Roboto ({
   weight: ["300", "400", "500"],
-  style: ["italic", "underline"]
+  style: ['italic', 'normal'],
+  subsets: ['latin']
 
 })
 
@@ -20,7 +21,7 @@ const RootLayout = ({ children }) => {
       {/* <head>
         <title>Next Project1</title>
       </head> */}
-      <body>
+      <body className={roboto.className}>
         <NavBar/>
         {children}
       </body>
