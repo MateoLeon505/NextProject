@@ -4,7 +4,7 @@ function loading() {
   return (
     <div>
         <h3>Loading...</h3>
-        <p>Esto puede tardar unos segundos, por favor tenga paciencia</p>
+        <p>Por favor, espere un momento</p>
     </div>
   )
 }
