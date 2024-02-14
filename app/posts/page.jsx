@@ -1,4 +1,5 @@
 import React from 'react'
+import PostCard from '../../components/postCard'
 
 const LoadPost = async () => {
 
@@ -10,16 +11,12 @@ const LoadPost = async () => {
 const PostPages = async () => {
 
     const posts = await LoadPost()
-    console.log(posts);
 
   return (
     <div>
        <h1>Posts:</h1> 
        {posts.map((post) => (
-        <div key={post.id}>
-            <h2>{post.id}) {post.title}</h2>
-            <p>{post.body}</p>
-        </div>
+            <PostCard  key={post.id} post={post}/>
        ))}
     </div>
   )
