@@ -5,7 +5,10 @@ const LoadPost = async () => {
 
     const res = await fetch('https://jsonplaceholder.typicode.com/posts')
     const data =  await res.json()
-    return data    
+
+    await new Promise((resolve) => setTimeout(resolve, 3000))
+
+    return data;
 }
 
 const PostPages = async () => {
@@ -22,4 +25,4 @@ const PostPages = async () => {
   )
 }
 
-export default PostPages
+export default PostPages;
