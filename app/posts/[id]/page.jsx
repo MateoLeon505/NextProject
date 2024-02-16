@@ -1,6 +1,6 @@
 import React from 'react'
 import { Suspense } from 'react'
-import PostPages from '../page'
+import PostPages from '@/app/posts/page'
 
 const loadPost = async (id) => {
     const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)

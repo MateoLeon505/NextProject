@@ -1,5 +1,5 @@
 import React from 'react'
-import PostCard from '../../components/postCard'
+import PostCard from '@/components/postCard'
 
 const LoadPost = async () => {
 
