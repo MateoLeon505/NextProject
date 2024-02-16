@@ -1,5 +1,6 @@
 import NavBar from "../components/navBar";
 import { Roboto } from "next/font/google";
+import './globals.css';
 
 export const metadata = {
   title: 'Projecto con Next js',

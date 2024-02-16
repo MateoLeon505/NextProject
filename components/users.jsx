@@ -4,10 +4,6 @@ import { useEffect } from 'react';
 
 const Users = () => {
 
-    useEffect(() => {
-        alert('Loading Complete!')
-    })
-
   return (
     <div>
         <p>users</p>

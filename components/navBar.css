@@ -1,0 +1,14 @@
+.navBar {
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title {
+    color: #FFFFFF;
+}
+.sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+}
