@@ -1,9 +1,34 @@
 import { NextResponse } from "next/server";
 
-const GET = () => {
-
-    // return new Response("Hello world!");
-    return NextResponse.json("Hello world!"); 
+const GET = async () => {
+    const res = await fetch('https://jsonplaceholder.typicode.com/users')
+    const data = await res.json()
+    return NextResponse.json(data) 
+    // return NextResponse.json({
+    //     message: "Obtener data!",
+    //     status: '202'
+    // }); 
 }
 
-export {GET}
+const POST = () => {
+    return NextResponse.json({
+        message: "Crear data!",
+        status: '202'
+    }); 
+}
+
+const PUT = () => {
+    return NextResponse.json({
+        message: "Actualizar data!",
+        status: '202'
+    }); 
+}
+
+const DELETE = () => {
+    return NextResponse.json({
+        message: "Eliminar data!",
+        status: '202'
+    }); 
+}
+
+export {GET, POST, PUT, DELETE}
