@@ -1,5 +1,10 @@
 import { NextResponse } from "next/server";
 
+const API_KEY = process.env.API_KEY
+const URL = `https://jsonplaceholder.typicode.com/users/${API_KEY}`
+const SECRET_KEY = process.env.SECRET_KEY
+console.log(SECRET_KEY);
+
 const GET = async () => {
     const res = await fetch('https://jsonplaceholder.typicode.com/users')
     const data = await res.json()
@@ -10,11 +15,9 @@ const GET = async () => {
     // }); 
 }
 
-const POST = () => {
-    return NextResponse.json({
-        message: "Crear data!",
-        status: '202'
-    }); 
+const POST = async (request) => {
+    const data = await request.json()
+    return NextResponse.json(data)
 }
 
 const PUT = () => {
